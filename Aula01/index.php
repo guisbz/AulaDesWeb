@@ -29,14 +29,14 @@
                     Profissão:
                 </td>
                 <td class="camposProfissao">
-                    <select id="ESPECIALIDADE_SELECIONADA">
+                    <select id="ESPECIALIDADE_SELECIONADA" name="profissao">
                     <option value="Professor">Professor</option>
                     <option value="Engenheiro">Engenheiro</option>
                     <option value="Medico">Médico</option>
-                    <option value="Professor">Programador</option>
+                    <option value="Programador">Programador</option>
                     </select>
                     <input type="text"
-                    onchange="fnBuscaSelectEspecifico(this, 'ESPECIALIDADE_SELECIONADA');" id="value" name="profissao"> ↓
+                    onchange="fnBuscaSelectEspecifico(this, 'ESPECIALIDADE_SELECIONADA');" id="value" name=""> ↓
                     <div id="msprofissao"></div>
                 </td>
             </tr>
