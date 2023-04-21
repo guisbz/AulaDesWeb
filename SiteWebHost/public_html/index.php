@@ -9,7 +9,7 @@
 </head>
 <body>
     <form action="Salvar.php">
-    <h1> Meu site está online! </h1>
+    <h1> Formulário online! </h1>
     <table class="table1">
         
         <tr>
@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td><label>Nome:</label></td>
-            <td><input class="campo_nome" type="text" id="Nome" name="Nome"></td>
+            <td><input class="campo_nome" type="text" id="nome" name="nome"></td>
         </tr>
         
             <tr>
@@ -29,13 +29,14 @@
                     Profissão:
                 </td>
                 <td class="camposProfissao">
-                    <select id="ESPECIALIDADE_SELECIONADA">
+                    <select id="ESPECIALIDADE_SELECIONADA" name="profissao">
                     <option value="Professor">Professor</option>
                     <option value="Engenheiro">Engenheiro</option>
                     <option value="Medico">Médico</option>
+                    <option value="Programador">Programador</option>
                     </select>
                     <input type="text"
-                    onchange="fnBuscaSelectEspecifico(this, 'ESPECIALIDADE_SELECIONADA');" id="value"> ↓
+                    onchange="fnBuscaSelectEspecifico(this, 'ESPECIALIDADE_SELECIONADA');" id="value" name=""> ↓
                     <div id="msprofissao"></div>
                 </td>
             </tr>
@@ -66,16 +67,16 @@
             </script>
                  <tr>
                     <td><label>CEP:</label></td>
-                    <td><input class="campo_cep" type="text" id="cep"></td>
+                    <td><input class="campo_cep" type="text" id="cep" name="cep"></td>
                  </tr>
 
                  <tr>
                     <td><label>Telefone:</label></td>
-                    <td><input class="campo_telefone" type="text" id="telefone"></td>
+                    <td><input class="campo_telefone" type="text" id="telefone" name="telefone"></td>
                  </tr>
                     <tr>
                         <td><label>CPF:</label></td>
-                        <td><input class="campo_cpf" type="text" id="cpf"></td>
+                        <td><input class="campo_cpf" type="text" id="cpf" name="cpf"></td>
                     </tr>
                     <tr>
                         <td class="titulo" colspan=100%>
@@ -88,7 +89,7 @@
                 </form>
                     <script>
                         function fnValidarCampos(){
-                        if(document.getElementById("Nome").value==0){
+                        if(document.getElementById("nome").value==0){
                             alert("Campo obrigatório!");
                             return false;
                         }
