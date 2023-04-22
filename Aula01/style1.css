@@ -125,7 +125,7 @@ a.pure-button-primary {
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    padding: 1em 1.6em;
+    padding: 1em 0.9em;
     font-weight: 100;
     border-radius: 5px;
     line-height: 2em;
@@ -237,7 +237,9 @@ a.pure-button-primary {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
-@media (min-width: 78em) {
+@media (min-width: 71em) {
+
+    
     /* We increase the header font size even more */
     .splash-head {
         font-size: 99%;
