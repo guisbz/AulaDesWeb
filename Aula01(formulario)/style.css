@@ -35,3 +35,9 @@ button {
 
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #a6f4ff;
+    
+}
+
